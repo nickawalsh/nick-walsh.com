@@ -122,18 +122,19 @@ throttle = (fn, threshhold = 250, scope) ->
 document.addEventListener('DOMContentLoaded', () ->
   data = [
     {plot: [-81.173, 28.4], r: 7} # FL
-    {plot: [-81.1, 32.084], r: 1} # Savannah
-    {plot: [-74.006, 40.713], r: 3} # NY
+    {plot: [-81.1, 32.084], r: 2} # Savannah
+    {plot: [-74.006, 40.713], r: 4} # NY
     {plot: [-0.128, 51.507], r: 1} # London
     {plot: [-87.63, 41.878], r: 1} # Chicago
     {plot: [-122.419, 37.775], r: 1} # SF
     {plot: [-90.199, 38.627], r: 2} # St Louis
-    {plot: [-77.345, 25.06], r: 2} # Nassau
+    {plot: [-77.345, 25.06], r: 4} # Nassau
     {plot: [-117.783, 33.542], r: 1} # Laguna
     {plot: [-149.9, 61.218], r: 1} # Anchorage
     {plot: [-123.121, 49.283], r: 1} # Vancouver
     {plot: [25.462, 36.393], r: 1} # Santorini
     {plot: [-122.676, 45.523], r: 2} # Portland
+    {plot: [-95.401, 29.817], r: 1} # Houston
   ]
 
   links = []
