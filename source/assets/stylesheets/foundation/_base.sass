@@ -6,20 +6,14 @@
 // *************************************
 
 html
-  background: #d2f0e2
-  color: #4c675b
-  height: 100%
-  font: 400 16px/1.5 'Source Sans Pro', sans-serif
+  background: #000
+  color: #d8e6e0
+  font: 400 18px/1.5 'Source Sans Pro', sans-serif
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
 
 body
-  display: flex
-  flex-direction: column
-  font-size: 100%
-  justify-content: flex-end
-  min-height: 100%
   overflow-x: hidden
-  position: absolute
-  width: 100%
 
 // -------------------------------------
 //   Block Content
@@ -32,41 +26,34 @@ h1, h2, h3
 
 h1, h3
   font-weight: 300
-  margin: 1.5rem 0 0.33rem
 
 h1
-  font-size: 275%
-  margin-top: 0
-  +respond-to(86em)
-    font-size: 375%
+  font-size: 200%
+  margin: 0
+  +respond-to(30em)
+    font-size: 275%
 
 h2
-  border-bottom: 1px solid
-  font-size: 75%
-  letter-spacing: 0.07rem
-  margin: 0
+  border-bottom: 1px solid rgba(#d8e6e0, 0.2)
+  font-size: 65%
+  letter-spacing: 0.1rem
+  margin: 2rem 0 0
   padding-bottom: 0.5rem
   text-transform: uppercase
 
 h3
-  font-size: 200%
+  font-size: 133%
+  margin: 0 0 0.25rem
 
 h4
-  font-size: 75%
+  font-size: 65%
+  letter-spacing: 0.1rem
   margin: 0
 
 // ----- Content ----- //
 
-hr
-  background: #4c675b
-  border: 0
-  height: 1px
-  margin: 1.5em 0
-  &:last-child
-    margin-bottom: 0
-
 p
-  margin: 1em 0 0
+  margin: 1rem 0 0
   + p
     margin-top: 0
     text-indent: 1.5em
@@ -77,28 +64,39 @@ p
 // ----- Special ----- //
 
 img
-  border-radius: 1.5em 0
+  border-radius: 1em 0
   display: block
-  margin-right: 1.5em
+  margin-right: 1em
   min-width: 88px
 
-svg
+canvas
+  animation: canvas 3s cubic-bezier(0.23, 1, 0.32, 1) 0.25s backwards
   left: 0
   position: fixed
   top: 0
+  +respond-to(48em)
+    left: -10%
+  +respond-to(70em)
+    left: -15%
+
+@keyframes canvas
+  from
+    opacity: 0
 
 // -------------------------------------
 //   Inline Content
 // -------------------------------------
 
 a
-  color: inherit
+  color: mix(#bd637b, #d8e6e0)
   display: block
   text-decoration: none
-  transition: color 0.1s ease-in-out
+  transition: color 0.2s cubic-bezier(0.23, 1, 0.32, 1)
   &:hover,
   &:focus
     color: #bd637b
+  h4
+    color: #d8e6e0
 
 strong
   font-weight: 600

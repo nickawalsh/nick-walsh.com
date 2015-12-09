@@ -1,5 +1,6 @@
 activate :automatic_image_sizes
 activate :directory_indexes
+activate :es6
 activate :livereload
 
 activate :autoprefixer do |config|
