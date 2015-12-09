@@ -6,3 +6,4 @@ gem 'middleman'
 gem 'middleman-autoprefixer'
 gem 'middleman-gh-pages'
 gem 'middleman-livereload'
+gem "middleman-es6", github: "vast/middleman-es6"

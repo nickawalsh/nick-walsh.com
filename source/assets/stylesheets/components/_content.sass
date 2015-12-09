@@ -1,0 +1,44 @@
+// *************************************
+//
+//   Content
+//   -> Words 'n' stuff
+//
+// *************************************
+
+.content
+  align-items: center
+  background: rgba(#2c332e, 0.85)
+  box-sizing: border-box
+  display: flex
+  flex-direction: column
+  flex-wrap: wrap
+  justify-content: flex-end
+  min-height: 100vh
+  padding: 1.5em
+  position: relative
+  width: 100%
+  z-index: 10
+  +respond-to(48em)
+    align-items: flex-end
+    background: linear-gradient(to right, rgba(#2c332e, 0.4), rgba(#2c332e, 0.9) 75%)
+    padding: 2em
+  +respond-to(55em)
+    background: linear-gradient(to right, rgba(#2c332e, 0), rgba(#2c332e, 0.9) 75%)
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+.content-inner
+  max-width: 29em
+
+.content-nav
+  display: flex
+  flex-wrap: wrap
+  a
+    border-bottom: 1px solid rgba(#d8e6e0, 0.2)
+    padding: 1.5em 0
+    width: 100%
+  +respond-to(35em)
+    a
+      width: 50%
